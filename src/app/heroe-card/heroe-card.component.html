@@ -1,0 +1,12 @@
+<mat-card class="heroes-card">
+    <mat-card-header>
+        <mat-card-title-group>
+            <mat-card-title>Nombre: {{ heroe.name }}</mat-card-title>
+            <mat-card-subtitle>SuperPoder: {{ heroe.superPower }}</mat-card-subtitle>
+            <img mat-card-md-image [src]="heroe.image" />
+        </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-actions>
+        <button (click)="emitHeroe()" class="btn btn-primary">Mostrar héroe</button>
+    </mat-card-actions>
+</mat-card>
